@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background: rgb(1,18,44);
+    background: linear-gradient(4deg, rgba(1,18,44,1) 0%);
+    height: 100vh;
+    display: flex;
+    min-height: 100vh;
+}
+.start
+{
+    background-color: white;;
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    margin: auto;
+    font-family: 'Tilt Neon', sans-serif;
+   
+}
+.welcon
+{
+    font-size: 5vh;
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+.container
+{  display: flex; 
+    align-items: center; 
+    justify-content: space-around;
+    gap: 2rem;
+}
+.img1 img
+{
+    width: 25vw;
+    height: 25vh;
+    margin: 2rem;
+    position: relative;
+    top:0%;
+    display: flex;
+    justify-content: space-between;
+}
+.featlay
+{
+    font-size: 3vh;
+    line-height:2rem;
+}
+.second_page
+{
+    color: aliceblue;
+    background-color: rgb(248, 60, 22);
+    width: 45%;
+    height: 62vh;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    justify-content: center;
+    margin: auto;
+    padding: 80px 90px;
+    line-height: 2rem;
+}
+.second_page b{
+    color:yellow;
+}
