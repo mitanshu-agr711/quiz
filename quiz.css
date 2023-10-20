@@ -89,8 +89,8 @@ Input[type="number"]
 #img23
 {
    height:auto;
-   width: 50%;
-   margin: 2%;
+   width: 60%;
+   margin-left: 10%;
    transform:scaleX(-1);
    flex-grow: 5;
 }
@@ -101,4 +101,3 @@ Input[type="number"]
 li div{
     display: flex;
 }
-@media()
