@@ -16,5 +16,4 @@ form.addEventListener("submit", (event) => {
     };
     userDetails.push(userData);
     localStorage.setItem("userDetails", JSON.stringify(userDetails));
-    console.log(userDetails);
 });
