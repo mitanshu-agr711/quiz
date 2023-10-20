@@ -12,19 +12,35 @@
 
     <section id="tome">
         <div class="welcon">Welcome to online quiz</div>
-       <div class="container11">
-        <div class=img23><img src="/images/undraw_Quiz_re_aol4__1_-removebg-preview.png" id="img23"></div>
-             <ul>
-                
-                <li><div class="name"><span class="cont">NAME:</span><input type=text placeholder="enter your name"></div></li>
-                <li><div class="email"><span class="cont">EMAIL:</span><input type=text placeholder="Enter your email"></div></li>
-                <li><div class="section2"><span class="cont">SECTION:</span><input type=text placeholder="Enter your section"></div></li>
-                <li><div class="roll"><span class="cont">ROLL NO.</span><input type=number placeholder="roll no."></div></li>
-                <li><div class="sumbit"><span class="cont"></span><input type="submit" value="Submit" ></div></li>
-                
+        <div class="container11">
+            <div class=img23><img src="/images/undraw_Quiz_re_aol4__1_-removebg-preview.png" id="img23"></div>
+            <form action="your_server_endpoint.php" method="post">
+            <ul>
+
+                <li>
+                    <div class="name"><span class="cont">NAME:</span><input type=text name="username" placeholder="enter your name" required>
+                    </div>
+                </li>
+                <li>
+                    <div class="email"><span class="cont">EMAIL:</span><input type=text name="email" placeholder="Enter your email" required>
+                    </div>
+                </li>
+                <li>
+                    <div class="section2"><span class="cont">SECTION:</span><input type=text name="section"
+                            placeholder="Enter your section" required></div>
+                </li>
+                <li>
+                    <div class="roll"><span class="cont">ROLL NO.</span><input type=number name="roll" placeholder="roll no." required></div>
+                </li>
+                <li>
+                    <div class="submit"><span class="cont"></span><input type="submit" name="submit" value="Submit"></div>
+                </li>
+
             </ul>
+        </form>
         </div>
     </section>
+    <script src="/info.js"></script>
 </body>
 
 </html>
