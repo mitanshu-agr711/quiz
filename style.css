@@ -4,7 +4,7 @@
 }
 body{
     background: rgb(1,18,44);
-    background: linear-gradient(4deg, rgba(1,18,44,1) 0%);
+    background-image: linear-gradient(to right bottom, #000046, #002f73, #005a9c, #0087c0, #1cb5e0);
     height: 100vh;
     display: flex;
     min-height: 100vh;
@@ -40,6 +40,39 @@ body{
 }
 .inst{
     margin: 2rem;
+}
+.inst a{
+    text-decoration: none;
+}
+.next{
+    margin: 2rem;
+   
+}
+#next
+{
+    background-color: aqua;
+    color:rebeccapurple;
+    font-size: larger;
+    font-weight: bold;
+}
+#inst
+{
+    background-color: aqua;
+    color:rebeccapurple;
+    font-size: larger;
+    font-weight: bold;
+}
+@media(max-width:410px)
+{
+    #inst
+    {
+       font-size: large;
+       font-weight: normal;
+    }
+
+}
+.next a{
+    text-decoration: none;
 }
 .welcon
 {

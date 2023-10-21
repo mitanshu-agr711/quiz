@@ -1,21 +1,21 @@
-*
-{
+* {
     margin: 0px;
     padding: 0px;
 }
-body{
-    background: rgb(1,18,44);
-    background: linear-gradient(4deg, rgba(1,18,44,1) 0%);
-    height: 100vh;
+
+body {
+    background: rgb(1, 18, 44);
+    background-image: url("/images/stock-vector-quiz-and-question-marks-trivia-night-quiz-symbol-neon-sign-night-online-game-with-questions-2052894734-transformed.jpg");
     display: flex;
     min-height: 100vh;
+    background-repeat: no-repeat;
 }
-#tome
-{
+
+#tome {
     background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
     width: auto;
     height: auto;
-    border: 2px solid black;
+    border: 2px solid rgb(23, 7, 243);
     margin: auto;
     font-family: 'Tilt Neon', sans-serif;
     flex-wrap: wrap;
@@ -24,24 +24,28 @@ body{
     padding: 3em;
     gap: 2em;
 }
-li
-{
+
+li {
     list-style: none;
 }
-.name{
+
+.name {
     margin: 2rem;
 }
-.email{
+
+.email {
     margin: 2rem;
 }
-.section2{
+
+.section2 {
     margin: 2rem;
 }
-.roll{
+
+.roll {
     margin: 2rem;
 }
-input[type="submit"]
-{
+
+input[type="submit"] {
     background-color: #04AA6D;
     color: white;
     padding: 10px 10px 10px 10px;
@@ -52,17 +56,8 @@ input[type="submit"]
     justify-self: center;
     align-items: center;
 }
-Input[type="text"]
-{
-    padding: 10px 10px 10px 10px;
-    border: none;
-    border-radius: 4px;
-    margin: auto;
-    justify-self: center;
-    align-items: center;
-}
-Input[type="number"]
-{
+
+Input[type="text"] {
     padding: 10px 10px 10px 10px;
     border: none;
     border-radius: 4px;
@@ -71,33 +66,97 @@ Input[type="number"]
     align-items: center;
 }
 
-.welcon
-{
+Input[type="number"] {
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-radius: 4px;
+    margin: auto;
+    justify-self: center;
+    align-items: center;
+}
+
+.welcon {
     font-size: 5vh;
     display: flex;
     justify-content: center;
     color: blue;
     margin: 2rem;
 }
-.container11
-{
+
+.container11 {
     align-items: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
 }
-#img23
-{
-   height:auto;
-   width: 60%;
-   margin-left: 10%;
-   transform:scaleX(-1);
-   flex-grow: 5;
+
+#img23 {
+    height: auto;
+    width: 60%;
+    margin-left: 10%;
+    transform: scaleX(-1);
+    flex-grow: 5;
 }
-.cont{
+
+.cont {
     width: 6rem;
     display: inline-block;
 }
-li div{
+
+li div {
     display: flex;
+}
+
+.wuize {
+    background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
+    width: auto;
+    height: auto;
+    border: 2px solid rgb(57, 57, 231);
+    margin: auto;
+    font-family: 'Tilt Neon', sans-serif;
+    flex-wrap: wrap;
+    border-radius: 5em;
+    border: 2px solid yellow;
+    padding: 3em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
+.timer
+{
+     width: 30%;
+     display: flex;
+     align-items: center;
+     float: right;
+     background-color: #d9a7c7;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 0.5em;
+    transform: translate(158%);
+}
+.Q1
+{
+    border: 2px solid black;
+    padding: 1em;
+    margin: 0.5em;
+}
+.option ul li{
+    border: 2px solid black;
+    margin:1em;
+    justify-content: center;
+    padding: 0.8em;
+}
+.footer
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+#next1{
+    background-color: aqua;
+    color:rebeccapurple;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0.8em;
+    border-radius: 1em;
+    transform: translate(158%);
 }
