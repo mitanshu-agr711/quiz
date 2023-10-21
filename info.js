@@ -1,7 +1,7 @@
 let form = document.querySelector("form");
 console.log(form);
 form.addEventListener("submit", (event) => {
-    event.preventDefault(); 
+    
     let name = event.target.username.value;
     let email = event.target.email.value;
     let section = event.target.section.value;
@@ -16,4 +16,16 @@ form.addEventListener("submit", (event) => {
     };
     userDetails.push(userData);
     localStorage.setItem("userDetails", JSON.stringify(userDetails));
+    event.preventDefault(); 
 });
+let displayData=()=>
+{
+    let data=JSON.parse(localStorage.getItem("userDetails")) ?? [];
+   let finaldata= '';
+   data.forEach((element,i)=>
+   {
+
+   })
+}
+//for each give us element and index value of element
+ displayData();
