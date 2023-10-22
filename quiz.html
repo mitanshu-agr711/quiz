@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/quiz.css">
 </head>
 <body>
-    <section class="quiz">
+    <section class="quiz" id="quizz" >
         <!-- <div class="question-show"> -->
         <div class="Q1" id="question">question</div>
        <div class="timer">Timer:<span id="time"></span></div>
@@ -27,16 +27,14 @@
     </footer>
 <!-- </div> -->
     </section>
-    <form action="your_server_endpoint.php" method="post">
-    <section class="result-show" style="display:none;">
-        <div class="middle">
-        <div class="show">Question: 6</div>
+        <section class="result-show" id="result" style="display: none;">
+        <div class="show">Total Question: 6</div>
         <div class="show">Attempt:<span id="attem"></span></div>
-        <div class="show">Correct:<span id="cort"></span></div>
-        <div class="show">Wrong:<span id="wrog"></span></div>
-        <div class="show">Total Score:<span id="scor"></span></div>
-        </div>
-    </form>
+<div class="show">Correct:<span id="cort"></span></div>
+<div class="show">Wrong:<span id="wrog"></span></div>
+<div class="show">Total Score:<span id="scor"></span></div>
+<div class="playag"><a href="/quiz.html"><input type="button" value="PLAY AGAIN" id="playag" ></a></div>
+
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
