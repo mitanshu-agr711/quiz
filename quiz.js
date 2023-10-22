@@ -37,10 +37,12 @@ let quiz =
         }];
         let currentindex = 0;
         let hello=0;
+        let correct=0;
+        let wrong=0;
    printQuestion(currentindex);
    function printQuestion(i)
    {
-    console.log(quiz[0]);
+    // console.log(quiz[0]);
     document.querySelector(".Q1").textContent = quiz[i].Question;
     document.querySelectorAll(".option li")[0].textContent = quiz[i].Options[0];
     document.querySelectorAll(".option li")[1].textContent = quiz[i].Options[1];
@@ -48,12 +50,29 @@ let quiz =
     document.querySelectorAll(".option li")[3].textContent = quiz[i].Options[3];
     
    }
+   
    function checkAnswer(Options) {
     hello++;
-    let 
-
+    // let optionClicked=document.querySelector(".option li").isDefaultNamespace("opt");
+    // console.log(optionClicked);
+    let optionClicked =Options.getAttribute("data-opt");
+    // console.log(optionClicked);
+    
+    if(optionClicked == quiz[currentindex].Answer) {
+        correct++;
+       
+    }
+    else {wrong++;}
    }
 
+   function nextQuestion() {
+    if (currentindex < quiz.length - 1) {
+        currentindex++;
+        printQuestion(currentindex);
+    } else {
+        alert("Quiz completed!");
+    }
+}
    
 
 // const questionElement = document.getElementsById("question");
