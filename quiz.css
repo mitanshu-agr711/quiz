@@ -107,9 +107,9 @@ li div {
     display: flex;
 }
 
-.wuize {
+.quiz {
     background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
-    width: auto;
+    width: 50%;
     height: auto;
     border: 2px solid rgb(57, 57, 231);
     margin: auto;

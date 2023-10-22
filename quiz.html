@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="/quiz.css">
 </head>
 <body>
-    <section class="wuize">
-        <div class="Q1">In which Yuga, Shree Rama was born in Ayodhya?</div>
+    <section class="quiz">
+        <div class="Q1" id="question">question</div>
        <div class="timer">Timer:<span></span></div>
         
-        <div class="option">
+        <div class="option" id="options">
             <ul>
-                <li> Satya Yuga</li>
-                <li>Treta Yuga</li>
-                <li> Kali Yuga</li>
-                <li>Dwapara Yuga</li>
+                <li class="btn">option1</li>
+                <li class="btn">option2</li>
+                <li class="btn">option3</li>
+                <li class="btn">option4</li>
             </ul>
         </div>
         <footer class="footer">
@@ -24,6 +24,8 @@
             <div class="Next1"><input type="button" value="Next" id="next1"></div>
         </footer>
     </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script src="/quiz.js"></script>
 </body>
 </html>
