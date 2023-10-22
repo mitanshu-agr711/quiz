@@ -13,16 +13,17 @@
         
         <div class="option" id="options">
             <ul>
-                <li class="btn">option1</li>
-                <li class="btn">option2</li>
-                <li class="btn">option3</li>
-                <li class="btn">option4</li>
+                <li class="btn" onlick="checkAnswer(this)" data-opt="1"></li>
+                <!-- //this is use to pass refernce value -->
+                <li class="btn" onlick="checkAnswer(this)" data-opt="2"></li>
+                <li class="btn" onlick="checkAnswer(this)" data-opt="3"></li>
+                <li class="btn" onlick="checkAnswer(this)" data-opt="4"></li>
             </ul>
         </div>
         <footer class="footer">
             <!-- <div class="skip"><input type="button" value="Skip"></div> -->
             <div class="Next1"><input type="button" value="Next" id="next1"></div>
-        </footer>
+    </footer>
     </section>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 

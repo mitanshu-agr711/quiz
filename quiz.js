@@ -36,13 +36,25 @@ let quiz =
             Answer: 4,
         }];
         let currentindex = 0;
+        let hello=0;
    printQuestion(currentindex);
    function printQuestion(i)
    {
     console.log(quiz[0]);
     $(".Q1").text(quiz[i].Question);
-    $(".option li").eq(0).text(quiz[i].Options[i]);
+    $(".option li").eq(0).text(quiz[i].Options[0]);
+    $(".option li").eq(1).text(quiz[i].Options[1]);
+    $(".option li").eq(2).text(quiz[i].Options[2]);
+    $(".option li").eq(3).text(quiz[i].Options[3]);
+
    }
+   function checkAnswer(Options) {
+    hello++;
+    
+   }
+
+   
+
 // const questionElement = document.getElementsById("question");
 // const optionsElement = document.getElementsById("options");
 // const nextButton = document.getElemenstById("next1");
