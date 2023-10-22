@@ -35,113 +35,118 @@ let quiz =
             Options: ["J.K. Rowling", " George Orwell", "Mark Twain", "Harper Lee"],
             Answer: 4,
         }];
-        let currentindex = 0;
-        let hello=0;
-        let correct=0;
-        let wrong=0;
-   printQuestion(currentindex);
-   function printQuestion(i)
-   {
+        let times=10;
+let currentindex = 0;
+let Attemps = 0;
+let correct = 0;
+let wrong = 0;
+let timeupshogaya = true;
+printQuestion(currentindex);
+ 
+function printQuestion(i) {
+
     // console.log(quiz[0]);
     document.querySelector(".Q1").textContent = quiz[i].Question;
     document.querySelectorAll(".option li")[0].textContent = quiz[i].Options[0];
     document.querySelectorAll(".option li")[1].textContent = quiz[i].Options[1];
     document.querySelectorAll(".option li")[2].textContent = quiz[i].Options[2];
     document.querySelectorAll(".option li")[3].textContent = quiz[i].Options[3];
-    
-   }
-   
-   function checkAnswer(Options) {
-    hello++;
+    let timerElement = document.querySelector("#time");
+    let remainingTime=times;
+    function uptime(){
+        min = Math.floor(remainingTime / 60);
+        sec = remainingTime % 60;
+    timerElement.textContent = min + ":" + sec;
+    if(remainingTime==0)
+    {
+        timeupshogaya=false;
+       alert("Time's up for this question!");
+    }
+    else{
+        remainingTime--;
+        setTimeout(uptime, 1000)
+    }
+}
+uptime();
+}
+
+let optionClicked = 0
+if(timeupshogaya){
+function checkAnswer(Options) {
+
     // let optionClicked=document.querySelector(".option li").isDefaultNamespace("opt");
     // console.log(optionClicked);
-    let optionClicked =Options.getAttribute("data-opt");
+    optionClicked = Options.getAttribute("data-opt");
     // console.log(optionClicked);
-    
-    if(optionClicked == quiz[currentindex].Answer) {
+    console.log(optionClicked);
+    if (optionClicked == quiz[currentindex].Answer) {
         correct++;
-       
-    }
-    else {wrong++;}
-   }
 
-   function nextQuestion() {
+    }
+    else { wrong++; }
+    
+}
+}
+let result;
+function nextQuestion() {
+    if (optionClicked > 0) {
+        Attemps++;
+        // clearTimeout("#time");
+        if (currentindex < quiz.length - 1) {
+            currentindex++;
+            printQuestion(currentindex);
+        } else {
+            alert("Quiz completed!");
+            result = confirm('If you want to see the scroe, please enter ok otherwise enter cancle');
+
+        }
+    }
+    optionClicked = 0;
+}
+function SkipQuestion() {
     if (currentindex < quiz.length - 1) {
         currentindex++;
+        clearTimeout("#time");
         printQuestion(currentindex);
     } else {
         alert("Quiz completed!");
+        result = confirm('If you want to see the scroe, please enter ok otherwise enter cancle');
     }
 }
-   
+let score = correct * 5 - wrong * 1;
+let attemps;
+let corrects;
+let wrongs;
+let score_correct;
+let form = document.querySelector("form");
+var results_correct = JSON.parse(localStorage.getItem("results_correct")) ?? [];
+function Showresult() {
+    const results =
+    {
+        attempts: Attemps,
+        corrects: correct,
+        wrongs: wrong,
+        score_correct: score,
+    };
 
-// const questionElement = document.getElementsById("question");
-// const optionsElement = document.getElementsById("options");
-// const nextButton = document.getElemenstById("next1");
-// let currentindex = 0;
-// let score = 0;
+    results_correct.push(results);
+    localStorage.setItem("results_correct", JSON.stringify(results_correct));
 
-// function startQuiz() {
-//     currentindex = 0;
-//     score = 0;
-//     nextButton.innerHTML = 'Next';
-//     showQuestion();
+}
+
+
+// localStorage.setItem('quizresult',JSON.stringify(Showresult));
+// document.querySelector('.quiz').style.display = 'none';
+// document.querySelector('.result-show').removeAttribute('hidden');
+// document.querySelector('#attem').textContent = results.attempts;
+// document.querySelector('#cort').textContent = results.corrects;
+// document.querySelector('#worg').textContent = results.wrongs;
+// document.querySelector('#scor').textContent = results.score_correct;
 // }
-// function showQuestion() {
-//     resetState();
-//     let currentQuestion =quiz[currentindex];
-//     let QuestionNo =currentindex+1;
-//     questionElement.innerHTML =QuestionNo  + "." + currentQuestion.Question;
-  
-//     currentQuestion.Options.forEach((Answer,index)=>
-//     {
-//         const button=document.createElement("button");
-//         button.innerHTML =Answer;
-//         button.classList.add("btn");
-//         button.addEventListener("click", () => checkAnswer(index));
-//         OptionsButton.appendChild(button);
-
-//     });
-//     nextButton.style.display = "block";
-// }
-// // function resetstate()
-// // {
-// //     nextButton.style.display = "none";
-// //     while(optionsElement.firstChild)
-// //     {
-// //         optionsElement.removeChild(optionsElement.firstChild);
-// //     }
-// // }
-
-// // startQuiz();
-// function checkAnswer(selectedOption) {
-//     const currentQuestion = quiz[currentindex];
-//     if (selectedOption === currentQuestion.Answer - 1) {
-//         // Correct answer
-//         score++;
+// let form = document.querySelector('form');
+// form.addEventListener('submit', function(event) {
+//     event.preventDefault();
+//     if (result) {
+//         Showresult();
 //     }
-
-//     currentindex++;
-//     if (currentindex < quiz.length) {
-//         showQuestion();
-//     } else {
-//         // Quiz is over
-//         alert("Quiz completed! Your score: " + score + "/" + quiz.length);
-//         nextButton.style.display = "none"; // Hide the Next button
-//     }
-// }
-
-// function resetState() {
-//     while (optionsElement.firstChild) {
-//         optionsElement.removeChild(optionsElement.firstChild);
-//     }
-// }
-
-// startQuiz();
-
-
-
-
-
-
-
+// });

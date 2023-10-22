@@ -33,12 +33,12 @@ form.addEventListener("submit", (event) => {
     event.target.reset();
     event.preventDefault();
 });
-let displayData = () => {
-    let data = JSON.parse(localStorage.getItem("userDetails")) ?? [];
-    let finaldata = '';
+// let displayData = () => {
+//     let data = JSON.parse(localStorage.getItem("userDetails")) ?? [];
+//     let finaldata = '';
 
-}
+// }
 //``it is used where we want access the id or class by using $ sign
 //for each give us element and index value of element
-displayData();
+// displayData();
 //  localStorage.clear();

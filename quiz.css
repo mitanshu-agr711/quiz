@@ -9,6 +9,7 @@ body {
     display: flex;
     min-height: 100vh;
     background-repeat: no-repeat;
+    background-size: auto;
 }
 
 #tome {
@@ -122,6 +123,22 @@ li div {
     display: flex;
     flex-direction: column;
 }
+.result-show
+{
+    background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
+    width: 50%;
+    height: auto;
+    border: 2px solid rgb(57, 57, 231);
+    margin: auto;
+    font-family: 'Tilt Neon', sans-serif;
+    flex-wrap: wrap;
+    border-radius: 5em;
+    border: 2px solid yellow;
+    padding: 3em;
+    gap: 2em;
+    display: flex;
+    flex-direction: column;
+}
 .timer
 {
      width: 30%;
@@ -149,7 +166,7 @@ li div {
 .footer
 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 #next1{
     background-color: aqua;
@@ -158,5 +175,15 @@ li div {
     font-weight: bold;
     padding: 0.8em;
     border-radius: 1em;
-    transform: translate(158%);
+    /* transform: translate(158%); */
+}
+#skip
+{
+    background-color: aqua;
+    color:rebeccapurple;
+    font-size: larger;
+    font-weight: bold;
+    padding: 0.8em;
+    border-radius: 1em;
+    /* transform: translate(-1%); */
 }
