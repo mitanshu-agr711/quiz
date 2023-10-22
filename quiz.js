@@ -41,16 +41,17 @@ let quiz =
    function printQuestion(i)
    {
     console.log(quiz[0]);
-    $(".Q1").text(quiz[i].Question);
-    $(".option li").eq(0).text(quiz[i].Options[0]);
-    $(".option li").eq(1).text(quiz[i].Options[1]);
-    $(".option li").eq(2).text(quiz[i].Options[2]);
-    $(".option li").eq(3).text(quiz[i].Options[3]);
-
+    document.querySelector(".Q1").textContent = quiz[i].Question;
+    document.querySelectorAll(".option li")[0].textContent = quiz[i].Options[0];
+    document.querySelectorAll(".option li")[1].textContent = quiz[i].Options[1];
+    document.querySelectorAll(".option li")[2].textContent = quiz[i].Options[2];
+    document.querySelectorAll(".option li")[3].textContent = quiz[i].Options[3];
+    
    }
    function checkAnswer(Options) {
     hello++;
-    
+    let 
+
    }
 
    
