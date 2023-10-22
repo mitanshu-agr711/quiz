@@ -59,7 +59,7 @@ function printQuestion(i) {
         timerElement.textContent = min + ":" + sec;
         if (remainingTime == 0) {
             timeupshogaya = false;
-            alert("Time's up for this question!");
+            // alert("Time's up for this question!");
         }
         else {
             remainingTime--;

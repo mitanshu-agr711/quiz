@@ -147,15 +147,46 @@ li div {
 }
 .timer
 {
-     width: 30%;
+     width: 10%;
      display: flex;
      align-items: center;
      float: right;
-     background-color: #d9a7c7;
+     background-image: linear-gradient(to right top, #b2fefa, #95f4f7, #76e9f6, #51def6, #0ed2f7);
     border: 2px solid black;
     padding: 1em;
     margin: 0.5em;
-    transform: translate(158%);
+    /* transform: translate(200%); */
+    border-radius: 40%;
+    justify-content: center;
+}
+@media(max-width:740px)
+{
+    .timer{
+        width:25%;
+    }
+}
+.next
+{
+    margin: 1em;
+}
+.ak
+{
+    display: flex;
+    justify-content: space-between;
+}
+#next
+{
+    background-color: aqua;
+    color:rebeccapurple;
+    font-size: larger;
+    font-weight: bold;
+    padding: 3%;
+    border-radius: 20%;
+}
+.Next1:hover{
+    cursor: pointer;
+    background-color: #d9a7c7;
+    color: black;
 }
 #playag
 {
@@ -163,12 +194,37 @@ li div {
     color:rebeccapurple;
     font-size: larger;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width:7em;
+    height:2em;
+    
+}
+input[type="button"]
+{
+    text-decoration: none;
+}
+.playag
+{
+    text-decoration: none;
+    border-radius: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding:1em;
 }
 .Q1
 {
     border: 2px solid black;
     padding: 1em;
     margin: 0.5em;
+    border-radius:20%;
+    width: 50%;
+    align-items: center; transform: translate(40%);
 }
 .option ul li{
     border: 2px solid black;
@@ -199,4 +255,21 @@ li div {
     padding: 0.8em;
     border-radius: 1em;
     /* transform: translate(-1%); */
+}
+#question
+{
+    display: flex;
+    justify-content: center;
+}
+.option li:hover
+{
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+}
+.show
+{
+    margin: 1em;
+    display: block;
+    
 }
