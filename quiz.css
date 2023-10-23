@@ -243,7 +243,7 @@ input[type="button"]
     padding: 0.8em;
     margin: 0.5em;
     border-radius:20%;
-    background-color: #0ed2f7;
+    background-image: linear-gradient(to left, #16bffd, #65a2f9, #a07fdd, #c456a8, #cb3066);
     color:black;
     width: auto;
 }
@@ -283,7 +283,7 @@ input[type="button"]
 }
 .option li:hover
 {
-    background-color: aqua;
+    background-color: #51def6;
     color: black;
     cursor: pointer;
 }
