@@ -188,11 +188,13 @@ li div {
 .next
 {
     margin: 1em;
+    
 }
 .ak
 {
     display: flex;
     justify-content: space-between;
+
 }
 #next
 {
@@ -207,6 +209,7 @@ li div {
     cursor: pointer;
     background-color: #d9a7c7;
     color: black;
+    
 }
 #playag
 {
