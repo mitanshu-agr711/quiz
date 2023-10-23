@@ -135,7 +135,7 @@ li div {
 }
 #result
 {
-    background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
+    background-image: url("/images/rewsjult.png");
     width: 20%;
     height: auto;
     border: 2px solid rgb(57, 57, 231);
@@ -148,6 +148,13 @@ li div {
     gap: 2em;
     display: flex;
     flex-direction: column;
+    color: white;
+    font-size: larger;
+    font-family: 'Bitter', serif;
+    font-family: 'Merriweather', serif;
+    font-family: 'Tilt Neon', sans-serif;
+    font-weight: bold;
+
 }
 #result li
 {
@@ -221,7 +228,6 @@ input[type="button"]
 }
 .playag
 {
-    text-decoration: none;
     border-radius: 20%;
     margin: auto;
     display: flex;
@@ -229,6 +235,7 @@ input[type="button"]
     align-items: center;
     justify-self: center;
     padding:1em;
+    text-decoration: none;
 }
 .Q1
 {
