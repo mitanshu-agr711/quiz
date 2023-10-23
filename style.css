@@ -14,12 +14,12 @@ body{
     background-image: linear-gradient(to left top, #d9a7c7, #f2b7c0, #fecdbe, #ffe4c7, #fffcdc);
     width:auto;
     height: auto;
-    border: 2px solid black;
+   
     margin: auto;
     font-family: 'Tilt Neon', sans-serif;
     flex-wrap: wrap;
     border-radius: 5em;
-    border: 2px solid yellow;
+    border: 6px solid  yellowgreen
    
 }
 @media(max-width:817px)
@@ -148,6 +148,7 @@ input[type=button]
     border: 1px solid white;
     border-radius: 5em;
     flex-wrap: wrap;
+    border: 6px solid  yellowgreen;
 }
 .second_page b{
     color:rgb(255, 55, 0);

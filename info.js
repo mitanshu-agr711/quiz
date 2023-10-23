@@ -33,6 +33,7 @@ form.addEventListener("submit", (event) => {
     event.target.reset();
     event.preventDefault();
 });
+form.location.href = "/feedback.html";
 // let displayData = () => {
 //     let data = JSON.parse(localStorage.getItem("userDetails")) ?? [];
 //     let finaldata = '';
